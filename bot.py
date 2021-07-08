@@ -32,15 +32,15 @@ motech = Client(
     
 @motech.on_message(filters.command(['start']))
 def start(client, message):
-            message.reply_text(text =f"🙋‍♂️ Hello **{message.from_user.first_name }\n\n**I am simple Google Translater Bot**\n\n`I can translate any language to you selected language`\n\nMore details /help",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
+            message.reply_text(text =f"🙋‍♂️ Hai **{message.from_user.first_name }\n\n**I am simple Google Translater Bot**\n\n`I can translate any language to you selected language`\n\nMore details /help",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                   InlineKeyboardButton("🗣️Group", url="https://t.me/Mo_Tech_Group"),
-                   InlineKeyboardButton("🤖Bot List", url="https://t.me/Mo_Tech_YT/176"),
-                   InlineKeyboardButton("👨‍💻Source", url="https://github.com/Mo-Tech-MRK-YT/GoogleTranslater")
+                   InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
+                   InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
                 ],
                 [
-                   InlineKeyboardButton("🔻 Subscribe Now YouTube 🔻", url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")
+                   InlineKeyboardButton("⚙️Help", callback_data='help'),
+                   InlineKeyboardButton("🔰About", callback_data='about')
                 ]
            ] 
         ) )
