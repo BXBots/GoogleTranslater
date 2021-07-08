@@ -36,7 +36,7 @@ API_HASH - From my.telegram.org or @MT_MyTelegramOrg_Bot
 
 ## Deploy To Heruku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy=https://github.com/BXBots/GoogleTranslater)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Support
 
