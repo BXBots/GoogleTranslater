@@ -32,7 +32,7 @@ motech = Client(
     
 @motech.on_message(filters.command(['start']))
 def start(client, message):
-            message.reply_text(text =f"🙋‍♂️ Hai **{message.from_user.first_name }\n\n**I am simple Google Translater Bot**\n\n`I can translate any language to you selected language`\n\nMore details /help",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
+            message.reply_text(text =f"🙋‍♂️ Hai **{message.from_user.first_name }\n\n`Iam a Simple Google Translater Bot. Send Me Any Text & Select Desired Language`\n\n👲 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz)",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
                    InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
@@ -50,12 +50,12 @@ def help(client, message):
             message.reply_text(text =f"🙋‍♂️ Hello **{message.from_user.first_name }\n\n**I am simple Google Translater Bot**\n\n**👁️‍🗨️Available Language👁️‍🗨️**\n\n👉[Click Here || Language List](https://github.com/Mo-Tech-MRK-YT/GoogleTranslater/blob/main/motech/language.txt)",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                   InlineKeyboardButton("🗣️Group", url="https://t.me/Mo_Tech_Group"),
-                   InlineKeyboardButton("🤖Bot List", url="https://t.me/Mo_Tech_YT/176"),
-                   InlineKeyboardButton("👨‍💻Source", url="https://github.com/Mo-Tech-MRK-YT/GoogleTranslater")
+                   InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
+                   InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
                 ],
                 [
-                   InlineKeyboardButton("🔻 Subscribe Now YouTube 🔻", url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")
+                   InlineKeyboardButton("⚙️Help", callback_data="help"),
+                   InlineKeyboardButton("🔰About", callback_data="about")
                 ]
            ] 
         ) )
@@ -65,12 +65,12 @@ def about(client, message):
             message.reply_text(text ="**About Me🧾**\n\n**🤖My Name Is** : Google Translater Bot\n\n**👨‍💼Developer : @Mrk_YT\n\n🎤Language : Python\n\n🗣️Any Doubt : @Mo_Tech_Group\n\n🔊Updates : @Mo_Tech_YT",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                   InlineKeyboardButton("🗣️Group", url="https://t.me/Mo_Tech_Group"),
-                   InlineKeyboardButton("🤖Bot List", url="https://t.me/Mo_Tech_YT/176"),
-                   InlineKeyboardButton("👨‍💻Source", url="https://github.com/Mo-Tech-MRK-YT/GoogleTranslater")
+                   InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
+                   InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
                 ],
                 [
-                   InlineKeyboardButton("🔻 Subscribe Now YouTube 🔻", url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")
+                   InlineKeyboardButton("⚙️Help", callback_data="help"),
+                   InlineKeyboardButton("🔰About", callback_data="about")
                 ]
            ] 
         ) )
@@ -106,11 +106,11 @@ async def echo(client, message):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton("⏭️",callback_data = "page2")
+	[InlineKeyboardButton("𝙽𝚎𝚡𝚝 ➠",callback_data = "page2")
 	]
 	] )
 	
- await  message.reply_text("📑Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
+ await  message.reply_text("Select The Desired Language ⇩",reply_to_message_id = message.message_id, reply_markup = keybord1) 
 
 
 @motech.on_callback_query()
@@ -133,7 +133,7 @@ async def translate_text(bot,update):
        [InlineKeyboardButton("Xhosa",callback_data = "xh"),
        InlineKeyboardButton("Yiddish",callback_data = "yi"),
        InlineKeyboardButton("Yoruba",callback_data = "yo")],
-       [InlineKeyboardButton("⏮️",callback_data = "page5")
+       [InlineKeyboardButton("𝙽𝚎𝚡𝚝 ➠",callback_data = "page5")
        
        ]
  ])
@@ -163,8 +163,8 @@ async def translate_text(bot,update):
          InlineKeyboardButton("Tatar",callback_data = "tt"),
          InlineKeyboardButton("Telugu",callback_data = "te")
          ],
-         [InlineKeyboardButton("⏮️",callback_data = "page4"),
-         InlineKeyboardButton("⏭️",callback_data = "page6")
+         [InlineKeyboardButton("⇚ 𝙱𝚊𝚌𝚔",callback_data = "page4"),
+         InlineKeyboardButton("𝙽𝚎𝚡𝚝 ➠",callback_data = "page6")
          ]  ])
    
  
@@ -193,8 +193,8 @@ async def translate_text(bot,update):
           InlineKeyboardButton("Russian",callback_data = "ru"),
           InlineKeyboardButton("Samoan",callback_data= "sm"),
           ],
-          [InlineKeyboardButton("⏮️",callback_data = "page3"),
-          InlineKeyboardButton("⏭️",callback_data = "page5")
+          [InlineKeyboardButton("⇚ 𝙱𝚊𝚌𝚔",callback_data = "page3"),
+          InlineKeyboardButton("𝙽𝚎𝚡𝚝 ➠",callback_data = "page5")
           ]
           
  
@@ -228,8 +228,8 @@ async def translate_text(bot,update):
                 InlineKeyboardButton("Malagasy",callback_data ="mg"),
                 InlineKeyboardButton("Malay",callback_data ="ms")
                 ],
-                [InlineKeyboardButton("⏮️",callback_data = "page2"),
-                InlineKeyboardButton("⏭️",callback_data = "page4")
+                [InlineKeyboardButton("⇚ 𝙱𝚊𝚌𝚔",callback_data = "page2"),
+                InlineKeyboardButton("𝙽𝚎𝚡𝚝 ➠",callback_data = "page4")
                 ]
               
  
@@ -263,7 +263,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton("⏭️",callback_data = "page2")
+	[InlineKeyboardButton("𝙽𝚎𝚡𝚝 ➠",callback_data = "page2")
 	]
 	] )
   
@@ -293,8 +293,8 @@ async def translate_text(bot,update):
            InlineKeyboardButton("Indonesian",callback_data = "id"),
            InlineKeyboardButton("Irish",callback_data = "ga")
            ],
-           [InlineKeyboardButton("⏮️",callback_data = "page1"),
-           InlineKeyboardButton("⏭️",callback_data = "page3"),
+           [InlineKeyboardButton("⇚ 𝙱𝚊𝚌𝚔",callback_data = "page1"),
+           InlineKeyboardButton("𝙽𝚎𝚡𝚝 ➠",callback_data = "page3"),
            ]
             ])
 						
@@ -304,17 +304,17 @@ async def translate_text(bot,update):
   tr_text = update.message.reply_to_message.text
   cb_data = update.data
   if cb_data== "page2":
-  	await update.message.edit("📑Select language 👇",reply_markup = keybord2)
+  	await update.message.edit("Select The Desired Language ⇩",reply_markup = keybord2)
   elif cb_data == "page1":
-  	await update.message.edit("📑Select language 👇",reply_markup =keybord1)
+  	await update.message.edit("Select The Desired Language ⇩",reply_markup =keybord1)
   elif cb_data =="page3":
-  	await update.message.edit("📑Select language 👇",reply_markup =keybord3)
+  	await update.message.edit("Select The Desired Language ⇩",reply_markup =keybord3)
   elif cb_data == "page4":
-  	await update.message.edit("📑Select language 👇",reply_markup =keybord4)
+  	await update.message.edit("Select The Desired Language ⇩",reply_markup =keybord4)
   elif cb_data =="page5":
-  	await update.message.edit("📑Select language 👇",reply_markup =keybord5)
+  	await update.message.edit("Select The Desired Language ⇩",reply_markup =keybord5)
   elif cb_data =="page6":
-  	await update.message.edit("📑Select language 👇",reply_markup =keybord6)
+  	await update.message.edit("Select The Desired Language ⇩",reply_markup =keybord6)
   else :
   	translator = google_translator()
   	translated_text = translator.translate(tr_text,lang_tgt=cb_data)
