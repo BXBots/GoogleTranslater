@@ -47,9 +47,7 @@ def start(client, message):
 
 @motech.on_message(filters.command(['help']))
 def help(client, message):
-            message.reply_text(text =f"➠ Just Send A Word/Sentence/Paragraph.
-
-➠ Select The Desired Language And I Will Translate It You!\n\n**Supports 108 Languages**\n\n**Made With ❤ By @BX_Botz**,reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
+            message.reply_text(text =f"➠ Just Send A Word/Sentence/Paragraph.\n\n➠ Select The Desired Language And I Will Translate It You!\n\n**Supports 108 Languages**\n\n**Made With ❤ By @BX_Botz** ",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
                    InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
@@ -64,7 +62,7 @@ def help(client, message):
 
 @motech.on_message(filters.command(['about']))
 def about(client, message):
-            message.reply_text(text ="**About Me🧾**\n\n**🤖My Name Is** : Google Translater Bot\n\n**👨‍💼Developer : @Mrk_YT\n\n🎤Language : Python\n\n🗣️Any Doubt : @Mo_Tech_Group\n\n🔊Updates : @Mo_Tech_YT",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
+            message.reply_text(text ="➠ **Bot** : Google Translator\n\n➠ **Creator** : [ᴍʜᴅ ᴍᴜꜰᴀz](https://telegram.me/Mufaz123)\n\n➠ **Channel** : @BX_Botz\n\n➠ **Source** : [Click here](https://t.me/nokiyirunnoippokitum)\n\n➠ **Language** : [Python](https://python.org/)\n\n➠ **Library** : [Pyrogram v1.2.0](https://pyrogram.org/)\n\n➠ **Server** : [Heroku](https://heroku.com/)",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
                    InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
