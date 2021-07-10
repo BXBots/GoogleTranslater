@@ -32,7 +32,7 @@ motech = Client(
     
 @motech.on_message(filters.command(['start']))
 def start(client, message):
-            message.reply_text(text =f"🙋‍♂️ Hai **{message.from_user.first_name }\n\n`Iam a Simple Google Translater Bot. Send Me Any Text & Select Desired Language`\n\n👲 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz)",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
+            message.reply_text(text =f"Hai **{message.from_user.first_name }\n\n`Iam a Simple Google Translater Bot. Send Me Any Text & Select Desired Language`\n\n👲 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz)",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
                    InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
