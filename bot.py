@@ -54,8 +54,8 @@ def help(client, message):
                    InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
                 ],
                 [
-                   InlineKeyboardButton("⚙️Help", callback_data="help"),
-                   InlineKeyboardButton("🔰About", callback_data="about")
+                   InlineKeyboardButton("⚙️Help", command="help"),
+                   InlineKeyboardButton("🔰About", commant="about")
                 ]
            ] 
         ) )
