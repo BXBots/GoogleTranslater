@@ -39,8 +39,8 @@ def start(client, message):
                    InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
                 ],
                 [
-                   InlineKeyboardButton("⚙️Help", callback_data="help"),
-                   InlineKeyboardButton("🔰About", callback_data="about")
+                   InlineKeyboardButton("⚙️Help", callback_data='help'),
+                   InlineKeyboardButton("🔰About", callback_data='about')
                 ]
            ] 
         ) )
@@ -54,8 +54,8 @@ def help(client, message):
                    InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
                 ],
                 [
-                   InlineKeyboardButton("⚙️Help", url="/help"),
-                   InlineKeyboardButton("🔰About", url="/about")
+                   InlineKeyboardButton("⚙️Help", callback_data='help'),
+                   InlineKeyboardButton("🔰About", callback_data='about')
                 ]
            ] 
         ) )
@@ -69,8 +69,8 @@ def about(client, message):
                    InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
                 ],
                 [
-                   InlineKeyboardButton("⚙️Help", callback_data="help"),
-                   InlineKeyboardButton("🔰About", callback_data="about")
+                   InlineKeyboardButton("⚙️Help", callback_data='help'),
+                   InlineKeyboardButton("🔰About", callback_data='about')
                 ]
            ] 
         ) )
