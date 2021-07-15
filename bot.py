@@ -35,12 +35,8 @@ def start(client, message):
             message.reply_text(text =f"Hai **{message.from_user.first_name }\n\n`Iam a Simple Google Translater Bot. Send Me Any Text & Select Desired Language`\n\n👲 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ʙx ʙᴏᴛᴢ](https://telegram.dog/BX_Botz)",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                   InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
+                   InlineKeyboardButton("🤖 Update Channel", url="https://t.me/BX_Botz"),
                    InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
-                ],
-                [
-                   InlineKeyboardButton("⚙️Help", callback_data='help'),
-                   InlineKeyboardButton("🔰About", callback_data='about')
                 ]
            ] 
         ) )
@@ -52,10 +48,6 @@ def help(client, message):
                 [
                    InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
                    InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
-                ],
-                [
-                   InlineKeyboardButton("⚙️Help", callback_data='help'),
-                   InlineKeyboardButton("🔰About", callback_data='about')
                 ]
            ] 
         ) )
@@ -67,10 +59,6 @@ def about(client, message):
                 [
                    InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/BX_Botz"),
                    InlineKeyboardButton("👥 Support Group", url="https://t.me/BxSupport")
-                ],
-                [
-                   InlineKeyboardButton("⚙️Help", callback_data='help'),
-                   InlineKeyboardButton("🔰About", callback_data='about')
                 ]
            ] 
         ) )
